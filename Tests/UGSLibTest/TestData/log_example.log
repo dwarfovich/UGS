@@ -1,0 +1,7 @@
+[General]
+Key1 = Val1
+Key2 = Val2
+[Section 2]
+Key1 = Val1
+Key2 = Val2 ; comment
+; comment

@@ -1,0 +1,15 @@
+; comment 1
+[General]
+PollingPeriod = 1001
+TestLoopback = 1
+; comment 2
+SettingsReportPath = "ugs-test.rep" ; comment 3
+BufferSize = 0x90009
+[COM]
+rttc = 100 ; comment 4
+[Message]
+CPAddr = 0x0044
+Prefix = "000102030405aaff"
+TypesToUnPack = ""
+MarkComposedMessageMask  = "0x0001 0x0002"
+Type0 = "0x0001 0x1000 0x0002 0x0003 0x0004 0x0005"

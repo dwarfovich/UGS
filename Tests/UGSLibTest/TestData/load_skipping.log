@@ -1,0 +1,5 @@
+[General]
+PollingPeriod = 0x1001
+BufferSize = z2
+[Message]
+Prefix = "123"

@@ -1,0 +1,45 @@
+[General]
+PollingPeriod = 1000
+TestLoopback = 0
+ShowSIOMessages = 0
+ShowMessageErrors = 0
+ShowCOMErrors = 0
+SettingsReportPath = "ugs.rep"
+BufferSize = 0x90000
+[UDP]
+IncomingPort = 11112
+[COM]
+SetupParams = "COM1: baud=9600 data=8 parity=N stop=1"
+rttc = 0
+wttc = 0
+rit = -1
+[Message]
+CPAddr = 0x0000
+PUAddr = 0x0000
+Prefix = ""
+CRC16Init = 0xFFFF
+ComposedType = 0x0003
+OutputComposedType = 0x0000
+TypesToUnPack = ""
+MarkComposedMessageMask = "0x0000 0x0000"
+MarkMessageMask = "0x0000 0x0000"
+TypesToMark = ""
+Type0 = "0x0001 0x1000 0x0000 0x0000 0x0000 0x0000"
+StatusPeriod = 0
+SendStatusTO = 1000000
+StatusMsg = "0x0000 0x0000 0x0000 0x0003 0x0000 0x0000"
+TUType = 0x0002
+TUSrcMask = 0x0000
+TUSrcComMsgIndex = 0
+TUPrimToSecSrc = 1
+TUSecToPrimSrc = 1
+OutPrefix = ""
+[Log]
+KeepLog = 0
+LogComposedType = 0x0000
+LogTypesToUnPack = ""
+LogComposedTypeToPack = 0x0000
+LogTypesToPack = "*"
+[Status]
+SourceIndex = 0x0020
+StatusRequestMessageType = 0x0001
